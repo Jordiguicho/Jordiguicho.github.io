@@ -1,0 +1,49 @@
+<HTML>
+
+<HEAD>
+<meta charset="utf-8">
+
+<TITLE> Meine Videospiele </TITLE>
+
+</HEAD>
+
+<BODY>
+<BODY BACKGROUND="images.jpg" TEXT="#000000">
+<H1> <DIV align="left"><a href="index.html"> <FONT FACE="Candara" SIZE="9" COLOR="blue">GAMER CORNER</FONT> </a></DIV> </DIV></H1>
+
+ 
+
+
+<form name=navegador>
+<select name="secciones" onchange="destino()">
+<option value="MENU" selected disable>Menu
+<option value="no" disabled>--------------------------------------
+<option value="MENU.html">Menu
+<option value="index.html">Inicio
+<option value="CREDITOS.html">Creditos
+</select>
+</form>
+
+
+<script language=javascript>
+
+function destino(){
+
+url = document.navegador.secciones.options[document.navegador.secciones.selectedIndex].value
+
+if (url != " no") window.location = url;
+
+}
+
+</script>
+    
+   
+
+<p align="center"><FONT FACE="Candara" SIZE="18" COLOR="orange"><strong> HECHO EN MEXICO POR :</strong> </FONT><br><br><br><br>
+    <FONT FACE="Cambria" SIZE="16" COLOR="blue"><strong><em>Desarrolladora de paginas web Uryajo S.A de C.V</em></strong></FONT><br><br><br><br>
+    <a href="https://twitter.com/Jordiguicho"><img src="creditos.jpg" width="650" height="300" align="center" border="1" hspace="6"></a>
+
+</p>
+
+</BODY>
+</HTML>
