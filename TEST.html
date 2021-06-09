@@ -1,0 +1,241 @@
+<HTML>
+
+<HEAD>
+<meta charset="utf-8">
+
+<TITLE> Meine Videospiele </TITLE>
+    
+    <style type="text/css">
+  .boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: blue;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+  .boton_personalizado:hover{
+    color: blue;
+    background-color: #ffffff;
+  }
+</style>
+
+</HEAD>
+
+<BODY>
+    <BODY BACKGROUND="images.jpg" TEXT="#000000">
+
+<H1> <DIV align="left"><a href="index.html"> <FONT FACE="Candara" SIZE="9" COLOR="blue">GAMER CORNER</FONT> </a></DIV> </H1>
+
+
+
+
+<form name=navegador>
+<select name="secciones" onchange="destino()">
+<option value="MENU" selected disable>Menu
+<option value="no" disabled>--------------------------------------
+<option value="MENU.html">Menu
+<option value="index.html">Inicio
+<option value="CREDITOS.html">Creditos
+</select>
+</form>
+
+
+<script language=javascript>
+
+function destino(){ 
+
+url = document.navegador.secciones.options[document.navegador.secciones.selectedIndex].value
+
+if (url != " no") window.location = url;
+
+}
+
+</script>
+<BR>
+<BR>
+<BR>
+<BR>
+
+<HR width="50%" size="5" color="blue">
+    <p align="center"><FONT FACE="Candara" SIZE="18" COLOR="orange"> <strong><em>Test Gamer</em></strong> </FONT>
+    </p>
+    <HR width="50%" size="5" color="blue">
+<BR>
+<BR>
+<BR>
+
+
+<script LANGUAGE="JavaScript">
+<!--
+    
+   function Mostrar(boton)
+   {
+      msg="Elementos:"+formulario.game.length+"\n";
+      msg+="Primer pregunta= "+formulario1.game[2].checked+"\n";
+     msg+="Segunda pregunta= "+formulario2.game[1].checked+"\n";
+     msg+="Tercer pregunta= "+formulario3.game[1].checked+"\n";
+     msg+="Cuarta pregunta= "+formulario4.game[1].checked+"\n";
+     msg+="Quinta pregunta= "+formulario5.game[2].checked+"\n";
+     msg+="Sexta pregunta= "+formulario6.game[0].checked+"\n";
+     msg+="Septima pregunta= "+formulario7.game[1].checked+"\n";
+     msg+="Octava pregunta= "+formulario8.game[0].checked+"\n";
+     msg+="Novena pregunta= "+formulario9.game[2].checked+"\n";
+     msg+="Decima pregunta= "+formulario10.game[0].checked+"\n";
+   
+     
+
+if (formulario1.game[2].checked==true&&formulario2.game[1].checked==true&&formulario3.game[1].checked==true&&formulario4.game[1].checked==true&&formulario5.game[2].checked==true&&formulario6.game[0].checked==true&&formulario7.game[1].checked==true&&formulario8.game[0].checked==true&&formulario9.game[2].checked==true&&formulario10.game[0].checked==true)
+    {alert("Haz ganado, eres un verdadero gamer");
+    alert(msg);}
+    
+    else
+    {alert("Vuelve a intentarlo plis");
+    alert(msg);}
+
+
+      
+   }
+//-->
+</script>
+
+<form action="procesa.phtml" name="formulario1" id="formulario1" method="GET">
+    
+
+    <DIV align="center"><FONT FACE="Cambria" SIZE="6" COLOR="orange">1. ¿Cual es el personaje principal de la saga de juegos Zelda?</FONT></DIV><br>
+    
+    <input type="radio" name="game" value="<18"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> Loss</FONT><br>
+        
+<input type="radio" name="game" value=">18 y <60"> <FONT FACE="Cambria" SIZE="6" COLOR="blue">Zelda</FONT><br>
+        
+<input type="radio" name="game" value=">60"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> Link</FONT><br>
+</form>
+    
+    
+    
+<form action="procesa.phtml" name="formulario2" id="formulario2" method="GET">   
+     <DIV align="center"><FONT FACE="Cambria" SIZE="6" COLOR="orange">2. ¿Cuantos personajes jugables tiene Grand theft auto V ?</FONT></DIV><br>
+    
+    <input type="radio" name="game" value="<18"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> <strong>1</strong></FONT><br>
+        
+<input type="radio" name="game" value=">18 y <60"> <FONT FACE="Cambria" SIZE="6" COLOR="blue"><strong>3</strong></FONT><br>
+        
+<input type="radio" name="game" value=">60"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> <strong>2</strong></FONT><br>
+    </form>
+    
+    
+    <form action="procesa.phtml" name="formulario3" id="formulario3" method="GET">
+     <DIV align="center"><FONT FACE="Cambria" SIZE="6" COLOR="orange">3. ¿Que tipo de juego es PLAYERUNKNOWN'S BATTLEGROUNDS?</FONT></DIV><br>
+    
+    
+    
+    <input type="radio" name="game" value="<18"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> RPG</FONT><br>
+        
+<input type="radio" name="game" value=">18 y <60"> <FONT FACE="Cambria" SIZE="6" COLOR="blue">Battle Royale</FONT><br>
+        
+<input type="radio" name="game" value=">60"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> PvE</FONT><br>
+    </form>
+    
+    
+    <form action="procesa.phtml" name="formulario4" id="formulario4" method="GET">
+     <DIV align="center"><FONT FACE="Cambria" SIZE="6" COLOR="orange">4. ¿Cual es nombre de el portador del traje de IRONMAN?</FONT></DIV><br>
+    
+    
+    
+    <input type="radio" name="game" value="<18"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> Tony Mendieta</FONT><br>
+        
+<input type="radio" name="game" value=">18 y <60"> <FONT FACE="Cambria" SIZE="6" COLOR="blue">Tony Stark</FONT><br>
+        
+<input type="radio" name="game" value=">60"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> Andrew Stark</FONT><br>
+    </form>
+    
+    
+    <form action="procesa.phtml" name="formulario5" id="formulario5" method="GET">
+     <DIV align="center"><FONT FACE="Cambria" SIZE="6" COLOR="orange">5. ¿Cual es el personaje principal del videojuego MINECRAFT?</FONT></DIV><br>
+    
+    
+    
+    <input type="radio" name="game" value="<18"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> Albert</FONT><br>
+        
+<input type="radio" name="game" value=">18 y <60"> <FONT FACE="Cambria" SIZE="6" COLOR="blue">Melissa</FONT><br>
+        
+<input type="radio" name="game" value=">60"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> Steve</FONT><br>
+    </form>
+    
+    <form action="procesa.phtml" name="formulario6" id="formulario6" method="GET">
+     <DIV align="center"><FONT FACE="Cambria" SIZE="6" COLOR="orange">6. ¿Cual es el personaje principal de la saga de juegos HALO?</FONT></DIV><br>
+    
+    
+    
+    <input type="radio" name="game" value="<18"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> Master Chief (Jefe Maestro)</FONT><br>
+        
+<input type="radio" name="game" value=">18 y <60"> <FONT FACE="Cambria" SIZE="6" COLOR="blue">EVA</FONT><br>
+        
+<input type="radio" name="game" value=">60"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> Zelda</FONT><br>
+    
+    </form>
+    
+    <form action="procesa.phtml" name="formulario7" id="formulario7" method="GET">
+     <DIV align="center"><FONT FACE="Cambria" SIZE="6" COLOR="orange">7. ¿Que significa WoW?</FONT></DIV><br>
+    
+    
+    
+    <input type="radio" name="game" value="<18"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> Wandering of war</FONT><br>
+        
+<input type="radio" name="game" value=">18 y <60"> <FONT FACE="Cambria" SIZE="6" COLOR="blue">World of Warcraft</FONT><br>
+        
+<input type="radio" name="game" value=">60"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> World of War</FONT><br>
+    
+    </form>
+    
+    <form action="procesa.phtml" name="formulario8" id="formulario8" method="GET">
+     <DIV align="center"><FONT FACE="Cambria" SIZE="6" COLOR="orange">8. ¿En que saga sale el personaje masculino Joel como co-portagonista?</FONT></DIV><br>
+    
+    
+    
+    <input type="radio" name="game" value="<18"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> The Last of Us</FONT><br>
+        
+<input type="radio" name="game" value=">18 y <60"> <FONT FACE="Cambria" SIZE="6" COLOR="blue">Halo</FONT><br>
+        
+<input type="radio" name="game" value=">60"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> DIABLO</FONT><br>
+    </form>
+    
+    
+    <form action="procesa.phtml" name="formulario9" id="formulario9" method="GET">
+     <DIV align="center"><FONT FACE="Cambria" SIZE="6" COLOR="orange">9. ¿Como se llama el modo alterno de Fortnite: Battle Royale?</FONT></DIV><br>
+    
+    
+    
+    <input type="radio" name="game" value="<18"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> Create the world</FONT><br>
+        
+<input type="radio" name="game" value=">18 y <60"> <FONT FACE="Cambria" SIZE="6" COLOR="blue">Safe and sound</FONT><br>
+        
+<input type="radio" name="game" value=">60"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> Save the world</FONT><br>
+    </form>
+    
+    <form action="procesa.phtml" name="formulario10" id="formulario" method="GET">
+     <DIV align="center"><FONT FACE="Cambria" SIZE="6" COLOR="orange">10. ¿En que juego el jefe final se hace llamar a si mismo "NEMESIS"?</FONT></DIV><br>
+    
+    
+    
+    <input type="radio" name="game" value="<18"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> Resident Evil 3</FONT><br>
+        
+<input type="radio" name="game" value=">18 y <60"> <FONT FACE="Cambria" SIZE="6" COLOR="blue">Cyberpunk</FONT><br>
+        
+<input type="radio" name="game" value=">60"><FONT FACE="Cambria" SIZE="6" COLOR="blue"> DIABLO II</FONT><br>
+</form>
+    <br><br><br><br>
+ <DIV align="center">
+
+<a href="" class="boton_personalizado" onclick="javascript:Mostrar()">RESULTADOS</a>
+
+    </DIV>
+<br><br><br><br><br><br><br><br>
+    <a href="https://twitter.com/Jordiguicho">
+<img src="derechos.jpg" width="450" height="200" align="center" border="1" hspace="6">
+
+    </a></BODY>
+
+</HTML>
